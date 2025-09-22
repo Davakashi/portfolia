@@ -10,7 +10,7 @@ const sourceSans = Source_Sans_3({
 export function TitleBar() {
   return (
     <section
-      className={`w-full h-[30px] flex items-center px-2 border-b border-[#191d20] bg-[#1F2428] text-white text-[0.85rem] ${sourceSans.className}`}
+      className={`w-full h-[30px] flex items-center px-2 border-b border-[#191d20] bg-[var(--titlebar-bg)] text-white text-[0.85rem] ${sourceSans.className}`}
     >
       {/* VSCode icon */}
       <Image src="/vscode.svg" width={15} height={15} alt="vscode-icon" />

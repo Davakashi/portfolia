@@ -49,7 +49,7 @@ export default function Explorer() {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
   return (
     <div
-      className={`bg-[#21222c] w-[18vw] max-[900px]:w-[20vw] min-[2000px]:w-[10vw] max-[600px]:hidden text-[#e1e4e8] ${sourceSans.className} border-r-[1px] border-r-[#161a1d]`}
+      className={`bg-[var(--explorer-bg)] w-[18vw] max-[900px]:w-[20vw] min-[2000px]:w-[10vw] max-[600px]:hidden text-[#e1e4e8] ${sourceSans.className} border-r border-r-[var(--explorer-border)]`}
     >
       <p className="py-2 px-3 font-light uppercase text-[0.9rem] tracking-[1px] mb-3">Explorer</p>
       <div>
@@ -73,7 +73,7 @@ export default function Explorer() {
         <div className="py-2 px-0 cursor-pointer">
           {explorerItems.map((item) => (
             <Link href={item.path} key={item.path}>
-              <div className="py-1 px-4 flex items-center text-[0.875rem] text-white decoration-none hover:bg-[#313241]">
+              <div className="py-1 px-4 flex items-center text-[0.875rem] text-white decoration-none hover:bg-[var(--explorer-hover-bg)]">
                 <Image src={item.icon} alt={item.name} height={18} width={18} /> <p className="ml-1.5">{item.name}</p>
               </div>
             </Link>

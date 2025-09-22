@@ -21,12 +21,12 @@ const sidebarBottomItems = [
 export default function SideBar() {
   const pathname = usePathname();
   return (
-    <aside className="bg-[#24292e] flex flex-col justify-between w-[4.5vw] min-[2000px]:w-[2.5vw] max-[1100px]:w-[6vw] max-[900px]:w-[8vw] max-[600px]:w-[10vw] h-calc(100vh - 55px)">
+    <aside className="bg-[var(--sidebar-bg)] flex flex-col justify-between w-[4.5vw] min-[2000px]:w-[2.5vw] max-[1100px]:w-[6vw] max-[900px]:w-[8vw] max-[600px]:w-[10vw] h-calc(100vh - 55px)">
       <div>
         {sidebarTopItems.map(({ Icon, path }) => (
           <Link href={path} key={path}>
             <div
-              className={`cursor-pointer w-full hover:bg-[#3c3d51] ${pathname === path ? "border-l-2 border-l-[#f9826c] " : ""}`}
+              className={`cursor-pointer w-full hover:bg-[var(--sidebar-hover-bg)] ${pathname === path ? "border-l-2 border-l-[var(--accent-color)] " : ""}`}
             >
               <Icon
                 size={16}
@@ -39,7 +39,7 @@ export default function SideBar() {
       </div>
       <div>
         {sidebarBottomItems.map(({ Icon, path }) => (
-          <div key={path} className="cursor-pointer w-full hover:bg-[#3c3d51]">
+          <div key={path} className="cursor-pointer w-full hover:bg-[var(--sidebar-hover-bg)]">
             <Link href={path}>
               <Icon
                 fill={pathname === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"}
