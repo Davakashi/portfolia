@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Bottombar from "@/components/bottombar/bottom-bar";
+import Explorer from "@/components/explorer/explorer";
+import Sidebar from "@/components/sidebar/side-bar";
+import TabsBar from "@/components/tabsbar/tabs-bar";
+import { TitleBar } from "@/components/titlebar/title-bar";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetBrainMono = JetBrains_Mono({
   subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -23,11 +27,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={jetBrainMono.className}>
+      <body>
+        <TitleBar />
+        <div className="flex  overflow-x-hidden bg-[#24292e]">
+          <Sidebar />
+          <Explorer />
+          <div className="w-full">
+            <TabsBar />
+            <main className="p-8 text-[#efefef] flex-1 h-[85vh] overflow-y-auto scroll-smooth overflow-x-hidden flex items-center scrollbar-custom]">
+              {children}
+            </main>
+          </div>
+        </div>
+        <Bottombar />
       </body>
     </html>
   );

@@ -120,3 +120,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin; /* Or "auto", "none" */
+    scrollbar-color: var(--accent-color) var(--scrollbar-track-bg);
+  }
+
+  /* Webkit scrollbar */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-bg);
+    border-left: 1px solid #1e1f29;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-left: 1px solid #1e1f29;
+  }
+}
