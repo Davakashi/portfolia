@@ -108,7 +108,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-6 relative z-20 py-12 px-0 max-[1200px]:items-center max-[1200px]:text-center max-[768px]:text-center max-[768px]:items-center max-[768px]:mt-6 max-[480px]:items-center max-[480px]:text-center max-[480px]:relative max-[480px]:max-w-[90%] max-[480px]:my-0 max-[480px]:mx-auto max-[480px]:before:hidden">
-          <h1 className="text-6xl leading-[1.1] font-extrabold m-0 text-[var(--text-color)] tracking-[-0.02em] max-[768px]:text-5xl max-[480px]:text-[2.8rem]/1.1 max-[480px]:shadow-[0_2px_10px_rgba(0,0,0,0.4)">
+          <h1 className="text-6xl leading-[1.1] font-extrabold m-0 text-[var(--text-color)] tracking-[-0.02em] max-[768px]:text-5xl max-[480px]:text-[2.8rem] max-[480px]:leading-[1.1] max-[480px]:shadow-[0_2px_10px_rgba(0,0,0,0.4)">
             DAVAAJARGAL{" "}
             <span className="text-[var(--accent-color)] max-[480px]:shadow-[0_2px_10px_rgba(var(--accent-color-rgb),0.4)">
               Tumurtogoo
@@ -119,7 +119,7 @@ export default function Home() {
             Full Stack Web Developer
           </div>
 
-          <p className="text-[1.1rem]/1.6 text-[#ffffffb3] max-w-xl m-0 max-[1200px]:max-w-full max-[768px]:text-base max-[480px]:text-[0.9rem]/1.6 max-[480px]:text-[#ffffffe6] max-[480px]:shadow-[0_1px_3px_rgba(0,0,0,0.2) max-[480px]:max-w-[320px] max-[480px]:mx-auto">
+          <p className="text-[1.1rem] leading-[1.6] text-[#ffffffb3] max-w-xl m-0 max-[1200px]:max-w-full max-[768px]:text-base max-[480px]:text-[0.9rem] max-[480px]:leading-[1.6] max-[480px]:text-[#ffffffe6] max-[480px]:shadow-[0_1px_3px_rgba(0,0,0,0.2) max-[480px]:max-w-[320px] max-[480px]:mx-auto">
             Always eager to learn and take on new challenges, I enjoy transforming ideas into scalable, user-friendly
             digital solutions.
           </p>

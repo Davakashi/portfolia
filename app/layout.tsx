@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className={jetBrainMono.className}>
       <body>
         <TitleBar />
-        <div className="flex  overflow-x-hidden bg-[var(--main-bg)]">
+        <div className="flex overflow-x-hidden bg-[var(--main-bg)]">
           <Sidebar />
           <Explorer />
           <div className="w-full">
