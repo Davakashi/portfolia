@@ -9,30 +9,34 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "MovieDB Explorer",
-    description: "Discover creative websites and developers. A portal for you to share your projects.",
-    logo: "/logos/driwwwle.svg",
-    link: "https://github.com/itsnitinr/driwwwle",
-    slug: "driwwwle",
+    description:
+      "A web application that allows users to explore and search for movies using the TMDB API. Features include movie details, ratings, genres, and poster previews with a responsive UI built using React.",
+    logo: "/logos/moviedb.png",
+    link: "https://github.com/Davakashi/MovieDB",
+    slug: "moviedb",
   },
   {
-    title: "VSCode Portfolio",
-    description: "A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.",
+    title: "Personal Portfolio",
+    description:
+      "Developed this portfolio site to showcase my projects, skills, and experience. Features responsive design, interactive components, and modern frontend best practices.",
     logo: "/logos/vsc.svg",
-    link: "https://github.com/itsnitinr/vscode-portfolio",
-    slug: "vscode-portfolio",
+    link: "https://github.com/Davakashi/portfolia",
+    slug: "personal-portfolio",
   },
   {
-    title: "Subtrackt",
-    description: "A simple and elegant way to track your subscriptions and save money.",
-    logo: "/logos/subtrackt.svg",
-    link: "https://github.com/itsnitinr/subtrackt",
-    slug: "subtrackt",
+    title: "Animax Clone",
+    description:
+      "Recreated the Animax website as a beginner project to practice core web development skills. Focused on responsive layouts, semantic HTML, and clean CSS while adding basic interactivity with vanilla JavaScript.",
+    logo: "/logos/animax.png",
+    link: "https://github.com/Davakashi/animax-copy",
+    slug: "animax",
   },
   {
-    title: "Coolify Deployments",
-    description: "VSCode extension to track and deploy your Coolify applications.",
-    logo: "/logos/coolify.svg",
-    link: "https://github.com/itsnitinr/coolify-vscode-extension",
-    slug: "coolify-vscode-extension",
+    title: "Home Finance",
+    description:
+      "Built a simple web app to track income and expenses while learning the basics of web development. Implemented form handling, dynamic DOM updates, and local storage to save data.",
+    logo: "/logos/html_icon.svg",
+    link: "https://github.com/Davakashi/home-finance-2024",
+    slug: "home-finance",
   },
 ];

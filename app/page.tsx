@@ -31,9 +31,9 @@ export default function Home() {
       type: "variable",
     },
     { code: "  const developerInfo = {", type: "variable" },
-    { code: "    name: 'Nitin Ranganath',", type: "array-item" },
+    { code: "    name: 'Davaajargal Tumurtogoo',", type: "array-item" },
     { code: "    role: 'Full Stack Developer',", type: "array-item" },
-    { code: "    bio: 'Building modern web experiences'", type: "array-item" },
+    { code: "    bio: 'Creating beautiful, functional web apps'", type: "array-item" },
     { code: "  };", type: "array-end" },
     { code: "", type: "blank" },
     { code: "  useEffect(() => {", type: "nested-function" },
@@ -120,8 +120,8 @@ export default function Home() {
           </div>
 
           <p className="text-[1.1rem]/1.6 text-[#ffffffb3] max-w-xl m-0 max-[1200px]:max-w-full max-[768px]:text-base max-[480px]:text-[0.9rem]/1.6 max-[480px]:text-[#ffffffe6] max-[480px]:shadow-[0_1px_3px_rgba(0,0,0,0.2) max-[480px]:max-w-[320px] max-[480px]:mx-auto">
-            I build elegant, responsive web applications with modern technologies. Focused on clean code and intuitive
-            user experiences.
+            Always eager to learn and take on new challenges, I enjoy transforming ideas into scalable, user-friendly
+            digital solutions.
           </p>
 
           <div className="flex flex-wrap gap-5 mt-4 items-center max-[1200px]:justify-center ">

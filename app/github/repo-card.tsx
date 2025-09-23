@@ -25,11 +25,11 @@ const RepoCard = ({ repo }: RepoCardProps) => {
             <VscStarEmpty className="text-[var(--accent-color)] mr-[0.3rem] text-base" />
             {repo.stargazers_count}
           </div>
-          <div>
+          <div className="flex items-center text-[0.85rem] text-[#ffffffb3] whitespace-nowrap">
             <VscRepoForked className="text-[var(--accent-color)] mr-[0.3rem] text-base" />
             {repo.forks}
           </div>
-          <div>
+          <div className="flex items-center text-[0.85rem] text-[#ffffffb3] whitespace-nowrap">
             <VscEye className="text-[var(--accent-color)] mr-[0.3rem] text-base" />
             {repo.watchers}
           </div>

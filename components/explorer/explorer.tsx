@@ -34,8 +34,8 @@ const explorerItems = [
     icon: "/logos/js_icon.svg",
   },
   {
-    name: "articles.json",
-    path: "/articles",
+    name: "experiences.json",
+    path: "/experiences",
     icon: "/logos/json_icon.svg",
   },
   {
@@ -70,7 +70,7 @@ export default function Explorer() {
           />
           Portfolio
         </label>
-        <div className="py-2 px-0 cursor-pointer">
+        <div className={`py-2 px-0 cursor-pointer ${portfolioOpen ? "block" : "hidden"}`}>
           {explorerItems.map((item) => (
             <Link href={item.path} key={item.path}>
               <div className="py-1 px-4 flex items-center text-[0.875rem] text-white decoration-none hover:bg-[var(--explorer-hover-bg)]">

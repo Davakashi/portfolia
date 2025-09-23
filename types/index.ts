@@ -1,12 +1,12 @@
-export interface Article {
-  id: string;
-  title: string;
+export interface Experience {
+  id: number;
+  company: string;
+  role: string;
+  period: string;
+  type: string; // Full-time, Internship, Freelance
   description: string;
-  cover_image: string;
-  url: string;
-  page_views_count: number;
-  public_reactions_count: number;
-  comments_count: number;
+  tech: string[];
+  logo: string; // company logo URL
 }
 
 export interface Project {
